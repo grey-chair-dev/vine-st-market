@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harvest Market | Downtown Milford Market & Café</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --harvest-cream: #fdfcf7;
+        --harvest-orange: #ff8c42;
+        --harvest-blue-light: #a8d5e2;
+        --harvest-blue-dark: #2c5282;
+        --harvest-ivy: #2d3a2d;
+        --harvest-sienna: #d97744;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--harvest-cream);
+        color: var(--harvest-ivy);
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3, .font-serif {
+        font-family: 'Fraunces', serif;
+      }
+      .bg-harvest-cream { background-color: var(--harvest-cream); }
+      .bg-harvest-orange { background-color: var(--harvest-orange); }
+      .bg-harvest-blue-light { background-color: var(--harvest-blue-light); }
+      .bg-harvest-blue-dark { background-color: var(--harvest-blue-dark); }
+      .text-harvest-ivy { color: var(--harvest-ivy); }
+      .text-harvest-sienna { color: var(--harvest-sienna); }
+      .text-harvest-orange { color: var(--harvest-orange); }
+      .text-harvest-blue-light { color: var(--harvest-blue-light); }
+      .text-harvest-blue-dark { color: var(--harvest-blue-dark); }
+      .bg-harvest-ivy { background-color: var(--harvest-ivy); }
+      .border-harvest-ivy { border-color: var(--harvest-ivy); }
+      .border-harvest-orange { border-color: var(--harvest-orange); }
+      .border-harvest-sienna { border-color: var(--harvest-sienna); }
+      
+      /* Smooth transitions for a premium feel */
+      .page-transition {
+        animation: fadeIn 0.4s ease-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

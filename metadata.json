@@ -1,0 +1,7 @@
+{
+  "name": "Harvest Market",
+  "description": "A local decision engine for Harvest Market in downtown Milford. Quickly find hours, location, and daily offerings for coffee, lunch, and groceries.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

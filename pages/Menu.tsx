@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MENU_SECTIONS, LUNCH_SPECIALS, PHONE } from '../constants';
+import { MENU_SECTIONS, LUNCH_SPECIALS, PHONE, COFFEE_ROASTER, NEIGHBORHOOD } from '../constants';
 import { Sparkles } from 'lucide-react';
 import RadishLogo from '../components/RadishLogo';
 
@@ -60,7 +60,7 @@ const Menu: React.FC = () => {
             
             <div className="mt-20 flex items-center justify-center gap-4 text-stone-400">
                <div className="h-[1px] w-12 bg-stone-200"></div>
-               <span className="text-[10px] uppercase tracking-[0.3em] font-bold">Rooted in Milford</span>
+               <span className="text-[10px] uppercase tracking-[0.3em] font-bold">Rooted in {NEIGHBORHOOD}</span>
                <div className="h-[1px] w-12 bg-stone-200"></div>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Menu: React.FC = () => {
         <header className="mb-24 text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
             <RadishLogo size={24} className="text-harvest-ivy opacity-80" />
-            <span className="text-[11px] uppercase tracking-[0.5em] font-bold text-harvest-sienna">La Terza Artisan Coffee</span>
+            <span className="text-[11px] uppercase tracking-[0.5em] font-bold text-harvest-sienna">{COFFEE_ROASTER}</span>
           </div>
           <h1 className="text-6xl font-serif text-harvest-ivy mb-6 italic">Coffee Menu</h1>
           <div className="flex items-center justify-center gap-3 text-stone-400">

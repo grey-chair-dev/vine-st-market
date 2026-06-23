@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Hero from '../components/sections/Hero';
-import { CATEGORIES, ANNOUNCEMENT } from '../constants';
+import { CATEGORIES, ANNOUNCEMENT, COFFEE_ROASTER, NEIGHBORHOOD } from '../constants';
 import { Page } from '../types';
 import { ArrowRight, Star, Bell } from 'lucide-react';
 
@@ -92,11 +92,11 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
             <div className="md:w-1/2">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-harvest-blue-light/20 text-harvest-blue-dark rounded-full mb-8">
                 <Star className="w-3 h-3 fill-current" />
-                <span className="text-[10px] font-bold uppercase tracking-widest">A Milford Staple</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest">An OTR Staple</span>
               </div>
               <h2 className="text-5xl font-serif text-harvest-ivy mb-8 leading-tight">Better ingredients, <br/><span className="italic">no compromise.</span></h2>
               <p className="text-stone-600 leading-relaxed mb-10 font-light text-lg">
-                We are a specialty market in the heart of downtown Milford. You can find delicious, locally-roasted coffee from <span className="font-semibold text-harvest-ivy">La Terza roasterie</span> in addition to specialty drinks, fresh juices and teas.
+                We are a specialty market on Vine Street in {NEIGHBORHOOD}. You can find small-batch coffee from <span className="font-semibold text-harvest-ivy">{COFFEE_ROASTER}</span> in addition to specialty drinks, fresh juices and teas.
               </p>
               <p className="text-stone-600 leading-relaxed mb-10 font-light text-lg">
                 Come in for a quick snack, grab-n-go breakfast and lunch or a range of grocery items including local produce and local dairy and eggs.

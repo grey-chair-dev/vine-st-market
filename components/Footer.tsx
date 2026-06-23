@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ADDRESS, BUSINESS_NAME, PHONE, EMAIL } from '../constants';
+import { ADDRESS, BUSINESS_NAME, PHONE, EMAIL, NEIGHBORHOOD } from '../constants';
 import { Page } from '../types';
 
 interface FooterProps {
@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
           <div>
             <h3 className="text-white text-lg font-bold mb-4">{BUSINESS_NAME}</h3>
             <p className="max-w-xs mb-6 text-sm leading-relaxed">
-              Your modern neighborhood market and café in the heart of downtown Milford.
+              Your modern neighborhood market and café in {NEIGHBORHOOD}, Cincinnati.
             </p>
             <div className="space-y-1 text-sm">
               <p>{ADDRESS}</p>
@@ -39,8 +39,8 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
             <div>
               <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">Connect</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="https://www.instagram.com/harvest.market/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a></li>
-                <li><a href="https://www.facebook.com/media/set/?set=a.501116352019404&type=3" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Facebook</a></li>
+                <li><span className="text-stone-500">Instagram</span></li>
+                <li><span className="text-stone-500">Facebook</span></li>
                 <li><a href={`tel:${PHONE.replace(/\D/g, '')}`} className="hover:text-white transition-colors text-stone-200 font-medium">Call Us</a></li>
               </ul>
             </div>
@@ -48,7 +48,9 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
         </div>
         
         <div className="pt-8 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
-          <p>© {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved.</p>
+          <div>
+            <p>© {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved.</p>
+          </div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white">Privacy Policy</a>
             <a href="#" className="hover:text-white">Terms of Service</a>

@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         <div className="lg:w-1/2 z-10">
           <BusinessStatus />
           <h1 className="mt-8 text-5xl sm:text-7xl font-semibold leading-[1.1] text-harvest-ivy tracking-tight italic md:not-italic">
-            Freshness <br/><span className="font-serif italic text-harvest-sienna">redefined</span> downtown.
+            Freshness <br/><span className="font-serif italic text-harvest-sienna">redefined</span> on Vine Street.
           </h1>
           <p className="mt-8 text-lg text-stone-600 max-w-xl leading-relaxed font-light">
             {TAGLINE}

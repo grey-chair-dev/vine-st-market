@@ -3,11 +3,14 @@ import React from 'react';
 import { Coffee, Sandwich, ShoppingBag, Utensils } from 'lucide-react';
 import { BusinessHours, MenuSection, WeeklySpecial } from './types';
 
-export const BUSINESS_NAME = "Harvest Market";
-export const ADDRESS = "308 Main St, Milford, OH 45150";
-export const PHONE = "(513) 239-5400";
-export const EMAIL = "harvestmarketmilford@gmail.com";
-export const TAGLINE = "A local decision engine for Harvest Market in downtown Milford. Quickly find hours, location, and daily offerings for coffee, lunch, and groceries.";
+export const BUSINESS_NAME = "Vine St Market";
+export const NEIGHBORHOOD = "Over-the-Rhine";
+export const ADDRESS = "1427 Vine St, Cincinnati, OH 45202";
+export const PHONE = "(513) 555-0142";
+export const EMAIL = "hello@vinestmarket.com";
+export const COFFEE_ROASTER = "Riverbend Roasters";
+export const TAGLINE = "A neighborhood market and café in Over-the-Rhine. Coffee, lunch, and groceries — all under one roof.";
+export const LOCATION_DESCRIPTION = "Over-the-Rhine, steps from Findlay Market and Washington Park.";
 
 export const ANNOUNCEMENT = {
   show: true,
@@ -61,7 +64,7 @@ export const MENU_SECTIONS: MenuSection[] = [
   {
     title: "Filter Coffee",
     items: [
-      { name: "House Brew", price: "3 / 3.5", description: "La Terza artisan coffee" },
+      { name: "House Brew", price: "3 / 3.5", description: `${COFFEE_ROASTER} artisan coffee` },
       { name: "Red Eye", price: "5 / 5.5", description: "Coffee + espresso" },
       { name: "Café au Lait", price: "3.5 / 4", description: "House brew + steamed milk" },
       { name: "Cold Brew", price: "4.5", description: "Slow-steeped for 24 hours" },
@@ -110,7 +113,7 @@ export const MENU_SECTIONS: MenuSection[] = [
   {
     title: "Grab-n-Go & Sandwiches",
     items: [
-      { name: "The Harvest Club", description: "Turkey, thick-cut bacon, avocado, and garlic aioli." },
+      { name: "The Vine St Club", description: "Turkey, thick-cut bacon, avocado, and garlic aioli." },
       { name: "Market Veggie", description: "Seasonal roasted vegetables with local feta." },
       { name: "Artisanal Panini", description: "Fresh mozzarella and pesto on sourdough." },
       { name: "Breakfast Provisions", description: "Handheld burritos with local eggs and chorizo." }
@@ -128,7 +131,7 @@ export const MENU_SECTIONS: MenuSection[] = [
     title: "Local Goods & Pantry",
     items: [
       { name: "Local Dairy & Eggs", description: "Fresh from regional family farms." },
-      { name: "Milford Produce", description: "The best of what's in season locally." },
+      { name: "Ohio Valley Produce", description: "The best of what's in season locally." },
       { name: "Specialty Provisions", description: "Curated oils, honey, and local pantry goods." },
       { name: "Artisan Breads", description: "Small-batch sourdough and seasonal loaves." }
     ]
@@ -136,7 +139,7 @@ export const MENU_SECTIONS: MenuSection[] = [
 ];
 
 export const CATEGORIES = [
-  { name: "La Terza Coffee", icon: <Coffee className="w-5 h-5" />, description: "Delicious, locally-roasted specialty coffee." },
+  { name: "Riverbend Coffee", icon: <Coffee className="w-5 h-5" />, description: "Small-batch roasts from our Cincinnati partner." },
   { name: "Fresh Breakfast & Lunch", icon: <Utensils className="w-5 h-5" />, description: "Chef-led snacks and grab-n-go meals." },
   { name: "Market Grocery", icon: <ShoppingBag className="w-5 h-5" />, description: "Local produce, dairy, eggs, and goods." }
 ];

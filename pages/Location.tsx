@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { MapPin, Phone, Clock, ExternalLink } from 'lucide-react';
-import { ADDRESS, PHONE, HOURS } from '../constants';
+import { ADDRESS, PHONE, HOURS, LOCATION_DESCRIPTION } from '../constants';
 import BusinessStatus from '../components/BusinessStatus';
 
 const Location: React.FC = () => {
@@ -25,7 +25,7 @@ const Location: React.FC = () => {
               </h2>
               <div className="bg-white p-6 rounded-xl border border-stone-200 shadow-sm">
                 <p className="text-stone-800 font-medium text-lg mb-1">{ADDRESS}</p>
-                <p className="text-stone-500 mb-6">Downtown Milford, near the riverfront.</p>
+                <p className="text-stone-500 mb-6">{LOCATION_DESCRIPTION}</p>
                 <a 
                   href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(ADDRESS)}`}
                   target="_blank"
@@ -82,7 +82,7 @@ const Location: React.FC = () => {
 
             <div className="bg-stone-100 p-6 rounded-xl text-sm text-stone-500">
               <p className="font-bold text-stone-700 mb-2">Parking Tip:</p>
-              Free street parking is available along North Walnut St and there's a public lot just a block away behind the library.
+              Metered street parking on Vine St. The Court Street garage is two blocks north.
             </div>
           </div>
 

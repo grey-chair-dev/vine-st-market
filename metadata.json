@@ -1,6 +1,6 @@
 {
-  "name": "Harvest Market",
-  "description": "A local decision engine for Harvest Market in downtown Milford. Quickly find hours, location, and daily offerings for coffee, lunch, and groceries.",
+  "name": "Vine St Market",
+  "description": "Neighborhood market and café on Vine Street in Cincinnati's Over-the-Rhine.",
   "requestFramePermissions": [
     "geolocation"
   ]

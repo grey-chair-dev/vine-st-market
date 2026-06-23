@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Page } from '../types';
 import { BUSINESS_NAME } from '../constants';
-import logoImage from '../logo.png';
+import RadishLogo from './RadishLogo';
 import { Menu, X } from 'lucide-react';
 
 interface NavigationProps {
@@ -29,14 +29,10 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setPage }) => {
       <nav className="max-w-5xl mx-auto px-6 h-20 flex justify-between items-center">
         <button 
           onClick={() => handleNavClick(Page.Home)}
-          className="group flex items-center"
+          className="group flex items-center transition-opacity group-hover:opacity-80"
+          aria-label={`${BUSINESS_NAME} home`}
         >
-          <img 
-            src={logoImage} 
-            alt="Harvest Market Logo"
-            className="h-16 w-auto transition-opacity group-hover:opacity-80"
-            style={{ maxHeight: '64px' }}
-          />
+          <RadishLogo height={64} />
         </button>
         
         {/* Desktop Navigation */}

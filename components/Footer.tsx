@@ -47,11 +47,22 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+        <div className="pt-8 border-t border-stone-800 text-center text-xs space-y-4">
           <div>
             <p>© {new Date().getFullYear()} {BUSINESS_NAME}. Demo site — not a real business.</p>
+            <p className="mt-1">
+              Built by{' '}
+              <a
+                href="https://greychair.digital"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                Grey Chair Digital
+              </a>
+            </p>
           </div>
-          <div className="flex gap-6">
+          <div className="flex justify-center gap-6">
             <a href="#" className="hover:text-white">Privacy Policy</a>
             <a href="#" className="hover:text-white">Terms of Service</a>
           </div>

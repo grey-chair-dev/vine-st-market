@@ -49,7 +49,7 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
         
         <div className="pt-8 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
           <div>
-            <p>© {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} {BUSINESS_NAME}. Demo site — not a real business.</p>
           </div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white">Privacy Policy</a>
